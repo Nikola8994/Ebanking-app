@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 100px auto 0; /* Adjusted top margin to avoid content overlap */
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    color: #009879;
+    margin-bottom: 10px;
+}
+
+
+
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; 
+    color:green; 
+    
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    margin: 10px;
+    font-size: 1em;
+    transition: all 0.3s ease; 
+    
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus,
+form select:focus {
+    outline: none;
+    border-color: #009879;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #009879;
+    color: #fff;
+    border: 1px solid #009879;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin: 10px;
+}
+
+form button:hover {
+    background-color: #007f65;
+    border-color: #007f65;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.styled-table th {
+    background-color: #009879;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-add, .btn-back {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-add {
+    background-color: #28a745;
+}
+
+.btn-add:hover {
+    background-color: #218838;
+}
+
+.btn-back {
+    display: block;
+    background-color: #dc3545;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.btn-back:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-edit {
+    background-color: #007bff;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover {
+    background-color: #0069d9;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+    .fixed-container {
+        padding: 5px 0;
+    }
+
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="number"],
+    form input[type="date"],
+    form select,
+    form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .styled-table th, .styled-table td {
+        padding: 8px;
+    }
+
+    .btn-back {
+        padding: 12px;
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
